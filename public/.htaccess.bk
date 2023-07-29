@@ -1,0 +1,21 @@
+
+
+# BEGIN Security Block
+# Block the include-only files.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+# Disable directory listing
+Options All -Indexes
+
+# Remove header with PHP version
+Header always unset X-Powered-By
+Header unset X-Powered-By
+# END Security Block

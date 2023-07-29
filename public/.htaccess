@@ -1,0 +1,58 @@
+# BEGIN LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+<IfModule LiteSpeed>
+RewriteEngine on
+CacheLookup on
+RewriteRule .* - [E=Cache-Control:no-autoflush]
+RewriteRule \.litespeed_conf\.dat - [F,L]
+
+### marker CACHE RESOURCE start ###
+RewriteRule wp-content/.*/[^/]*(responsive|css|js|dynamic|loader|fonts)\.php - [E=cache-control:max-age=3600]
+### marker CACHE RESOURCE end ###
+
+### marker FAVICON start ###
+RewriteRule favicon\.ico$ - [E=cache-control:max-age=86400]
+### marker FAVICON end ###
+
+### marker DROPQS start ###
+CacheKeyModify -qs:fbclid
+CacheKeyModify -qs:gclid
+CacheKeyModify -qs:utm*
+CacheKeyModify -qs:_ga
+### marker DROPQS end ###
+
+</IfModule>
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END LSCACHE
+# BEGIN NON_LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END NON_LSCACHE
+
+
+# BEGIN Security Block
+# Block the include-only files.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^wp-admin/includes/ - [F,L]
+	RewriteRule !^wp-includes/ - [S=3]
+	RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+	RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+	RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+# Disable directory listing
+Options All -Indexes
+
+# Remove header with PHP version
+Header always unset X-Powered-By
+Header unset X-Powered-By
+# END Security Block
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+# END WordPress
