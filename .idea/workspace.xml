@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07db658b-f014-4360-a0d0-12496914e936" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="no-lazy-loading-branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1696005096" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="no-lazy-loading-branch" />
+                    <option name="lastUsedInstant" value="1696005095" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2TEzKg0cDPQ2tZKIpFMAkGMYHN2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07db658b-f014-4360-a0d0-12496914e936" name="Changes" comment="" />
+      <created>1690622972621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690622972621</updated>
+      <workItem from="1690622977158" duration="3921000" />
+      <workItem from="1690899691600" duration="1245000" />
+      <workItem from="1691615949043" duration="43000" />
+      <workItem from="1691616014414" duration="28000" />
+      <workItem from="1691616062605" duration="724000" />
+      <workItem from="1692255118135" duration="43000" />
+      <workItem from="1692255183684" duration="19000" />
+      <workItem from="1696004368950" duration="890000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit modules">
+      <option name="closed" value="true" />
+      <created>1690623748000</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690623748000</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove comments">
+      <option name="closed" value="true" />
+      <created>1690624177801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690624177801</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove comments">
+      <option name="closed" value="true" />
+      <created>1690624260564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690624260564</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removed unnecessary blank lines in index.html&#10;&#10;This commit trims down the extra blank lines spread across multiple sections of the index.html. Those blank spaces were adding nothing to the legibility or functionality of the code. Cleaning these out makes the file easier to navigate and read.">
+      <option name="closed" value="true" />
+      <created>1691616120389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691616120389</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Remove PageSense script from index.html&#10;&#10;The PageSense script was removed from the index.html file. This change was made because we have stopped using Zoho PageSense for our website analytics. As a result, it is no longer necessary to load the script with each page view, which will help to improve the loading performance.">
+      <option name="closed" value="true" />
+      <created>1691616661892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691616661892</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit modules" />
+    <MESSAGE value="remove comments" />
+    <MESSAGE value="Removed unnecessary blank lines in index.html&#10;&#10;This commit trims down the extra blank lines spread across multiple sections of the index.html. Those blank spaces were adding nothing to the legibility or functionality of the code. Cleaning these out makes the file easier to navigate and read." />
+    <MESSAGE value="Remove PageSense script from index.html&#10;&#10;The PageSense script was removed from the index.html file. This change was made because we have stopped using Zoho PageSense for our website analytics. As a result, it is no longer necessary to load the script with each page view, which will help to improve the loading performance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove PageSense script from index.html&#10;&#10;The PageSense script was removed from the index.html file. This change was made because we have stopped using Zoho PageSense for our website analytics. As a result, it is no longer necessary to load the script with each page view, which will help to improve the loading performance." />
+  </component>
+</project>
