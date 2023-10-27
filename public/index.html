@@ -52,6 +52,33 @@
             color: white;
             margin: 0;
         }
+
+                /* Hide the "Check Pricing" and "Need Help? Call Now" text in mobile view */
+            @media (max-width: 768px) {
+            .support-button .cont {
+                display: none;
+            }
+        }
+
+            /* Only show the relevant icons in mobile view */
+            @media (max-width: 768px) {
+            .support-button .icon {
+                display: block;
+            }
+        }
+
+        .dropdown-item {
+        height: 10px;
+        padding-top: 5px;
+        transition: all 0.3s ease-in-out;
+        /* add space infront of each item*/
+        margin-left: 10px;
+        }
+
+        .dropdown-menu {
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        }
     </style>
 </head>
 
@@ -76,21 +103,21 @@
 
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <div class="support-button float-right d-none d-md-block">
+                        <div class="support-button float-right">
                             <div class="support float-left">
                                 <div class="icon">
-                                    <img alt="Logo"
+                                    <a href="contact.html"> <img alt="Logo"
                                         src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_48/v1697278172/price-tag_me7oxu.gif"
-                                        style="width: 80%;">
+                                        style="width: 80%; max-width: 50px;"> </a>
                                 </div>
                                 <div class="cont">
                                     <p>Pricing</p>
-                                    <span><a href="contact.html">Check our pricing</a></span>
+                                    <span><a href="contact.html">Contact for pricing</a></span>
                                 </div>
                                 <div class="icon">
                                     <img alt="icon"
                                         src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,h_48,q_50,y_0/v1689867004/Website/images/all-icon/telephone_tne9gh.gif"
-                                        style="height:50px;">
+                                        style="width: 80%; max-width: 50px;">
                                 </div>
                                 <div class="cont">
                                     <p>Need Help? Call Now</p>
@@ -121,20 +148,31 @@
                             </button>
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#about-part">About us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#category-part">Subjects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.html">Contact</a>
-                                    </li>
+                                  <li class="nav-item">
+                                    <a href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#about-part">About us</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Syllabus
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Cambridge</a></li>
+                                      <li><a class="dropdown-item" href="#">AQA</a></li>
+                                      <li><a class="dropdown-item" href="#">OCR</a></li>
+                                      <li><a class="dropdown-item" href="#">Edexcel</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#category-part">Subjects</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="contact.html">Contact</a>
+                                  </li>
                                 </ul>
-                            </div>
+                              </div>                              
                         </nav>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-3 col-4">
