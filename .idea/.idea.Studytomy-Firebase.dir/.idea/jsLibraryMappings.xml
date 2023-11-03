@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{ajax-contact, animate, bootstrap, default, font-awesome, jquery-1.12.4, jquery.countdown, jquery.counterup, jquery.magnific-popup, jquery.nice-number, jquery.nice-select, magnific-popup, main, modernizr-3.6.0, nice-select, responsive, slick, style, validator, waypoints}" />
+  </component>
+</project>
