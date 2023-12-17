@@ -125,10 +125,10 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a href="index.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html#about-part">About us</a>
+                                        <a href="#about-part">About us</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -136,17 +136,17 @@
                                             Exam Boards
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="/exam-boards.html#edexcel">Edexcel</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#cambridge">Cambridge (CIE)</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#aqa">AQA</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#ocr-a-ocr-b">OCR A & OCR B</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#ib">IB</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#ossd">OSSD</a></li>
-                                            <li><a class="dropdown-item" href="/exam-boards.html#vce">VCE</a></li>
+                                            <li><a class="dropdown-item" href="#">Edexcel</a></li>
+                                            <li><a class="dropdown-item" href="#">Cambridge (CIE)</a></li>
+                                            <li><a class="dropdown-item" href="#">AQA</a></li>
+                                            <li><a class="dropdown-item" href="#">OCR A & OCR B</a></li>
+                                            <li><a class="dropdown-item" href="#">IB</a></li>
+                                            <li><a class="dropdown-item" href="#">OSSD</a></li>
+                                            <li><a class="dropdown-item" href="#">VCE</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html#category-part">Subjects</a>
+                                        <a href="#category-part">Subjects</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="home-school.html">Home School</a>
@@ -175,112 +175,63 @@
             </div>
         </div>
     </header>
-    <!-- Header End -->
 
-    <section class="pt-90 pb-120 gray-bg" id="contact-page">
+    <!-- Teacher Profile Page -->
+    <section id="teacher-profile">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="contact-from mt-30">
-                        <div class="section-title">
-                            <h5>Contact Us</h5>
-                            <h2>Keep in touch</h2>
-                        </div> <!-- section title -->
-                        <div class="main-form pt-45">
-                            <form action="https://formspree.io/f/xdornkeg" data-toggle="validator" id="contact-form"
-                                method="POST">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="singel-form form-group">
-                                            <input data-error="Name is required." name="name" placeholder="Your name"
-                                                required="required" type="text">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="singel-form form-group">
-                                            <input data-error="Valid email is required." name="email"
-                                                placeholder="Email" required="required" type="email">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="singel-form form-group">
-                                            <input data-error="Subject is required." name="subject"
-                                                placeholder="Subject" required="required" type="text">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="singel-form form-group">
-                                            <input data-error="Phone is required." name="phone" placeholder="Phone"
-                                                type="text">
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="singel-form form-group">
-                                            <textarea data-error="Please,leave us a message." name="message"
-                                                placeholder="Message" required="required"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                    <p class="form-message"></p>
-                                    <div class="col-md-12">
-                                        <div class="singel-form">
-                                            <button class="main-btn" type="submit">Send</button>
-                                        </div> <!-- singel form -->
-                                    </div>
-                                </div> <!-- row -->
-                            </form>
-                        </div> <!-- main form -->
-                    </div> <!--  contact from -->
+                <div class="col-md-4">
+                    <!-- Teacher Image -->
+                    <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1689866995/Website/images/teachers/t-3_mcyolj.png"
+                        alt="Teacher's Name" class="teacher-image">
                 </div>
-                <div class="col-lg-5">
-                    <div class="contact-address mt-30">
-                        <ul>
-                            <li>
-                                <div class="singel-address">
-                                    <div class="icon">
-                                        <i class="fa fa-map-marker"></i>
-                                    </div>
-                                    <div class="cont">
-                                        <a href="https://goo.gl/maps/qEdoHvbSTUyjwjXs9">6 Dripstone Road. Casuarina,</a>
-                                        <a href="https://goo.gl/maps/qEdoHvbSTUyjwjXs9">Northern Territory,
-                                            Australia</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="singel-address">
-                                    <div class="icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="cont">
-                                        <a href="callto:+61452413362">+61452413362</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="singel-address">
-                                    <div class="icon">
-                                        <i class="fa fa-envelope-o"></i>
-                                    </div>
-                                    <div class="cont">
-                                        <a href="mailto:info@studytomy.com">info@studytomy.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="map mt-30">
-                        <div id="contact-map">
-                            <iframe allowfullscreen="" height="100%" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15588.37219289967!2d130.8811128!3d-12.3766992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc095a4b9fc0ded%3A0x3ec30b54c649d96!2sStudytomy!5e0!3m2!1sen!2sqa!4v1687603317244!5m2!1sen!2sqa"
-                                style="border:0;" width="100%"></iframe>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                    <!-- Teacher Name -->
+                    <h2 class="teacher-name">Mrs Aleema Hadid</h2>
+                    <!-- Educational Qualifications -->
+                    <h4 class="qualification-title">Educational Qualifications:</h4>
+                    <ul class="educational-qualifications">
+                        <li>Bachelor of Psychology</li>
+                        <li>Master of English Literature</li>
+                    </ul>
+                    <br>
+                    <!-- Experience -->
+                    <h4 class="experience-title">Experience:</h4>
+                    <p class="teacher-experience" style="text-align: justify;">
+                    <h4>Mrs. Aleema Hadid - Experienced Educator</h4>
+                    <p>Mrs. Aleema Hadid is a passionate and experienced educator with over 10 years of experience
+                        teaching English and Psychology at the secondary and college levels. She is committed to
+                        providing her students with a rigorous and engaging learning experience that prepares them for
+                        success in their future academic and professional endeavors.</p>
+                    <br>
+                    <h4>Teaching Philosophy</h4>
+                    <p>Mrs. Hadid's teaching philosophy is student-centered and focused on developing critical thinking
+                        skills, communication skills, and a love of learning. She believes that all students can
+                        succeed, and she works hard to create a supportive and inclusive classroom environment where all
+                        students feel valued and respected.</p>
+                    <br>
+                    <h4>Teaching Methods</h4>
+                    <p>In her previous role as a high school English teacher, Mrs. Hadid developed and implemented a
+                        variety of innovative teaching methods, including project-based learning, peer tutoring, and
+                        differentiated instruction. She also worked closely with students to develop their writing
+                        skills and prepare them for college-level coursework.</p>
+                    <br>
+                    <h4>Current Role</h4>
+                    <p>Mrs. Hadid is currently a college English teacher at a local community college. In this role, she
+                        teaches a variety of courses, including composition, literature, and critical thinking. She is
+                        known for her engaging lectures, her ability to create a positive learning environment, and her
+                        commitment to helping her students succeed.</p>
+                    <br>
+                    <h4>Accomplishments</h4>
+                    <ul>
+                        <li>Developed and implemented a new English language arts curriculum for middle school students
+                            that was aligned with the Common Core State Standards.</li>
+                        <li>Led a team of teachers in developing a new peer tutoring program that has helped to improve
+                            student achievement in English language arts.</li>
+                        <li>Mentored several new teachers and helped them to develop their teaching skills.</li>
+                        <li>Received the "Teacher of the Year" award by her school district on two occasions.</li>
+                    </ul>
+                    </p>
                 </div>
             </div>
         </div>
@@ -296,66 +247,13 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="copyright text-md-right text-center pt-15"></div>
+                        <div class="copyright text-md-right text-center pt-15">
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <a class="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#contact-form').submit(function (event) {
-                event.preventDefault(); // Prevent the form from submitting normally
-
-                let form = $(this);
-                let submitButton = form.find('button[type="submit"]');
-                let formMessage = form.find('.form-message');
-                formMessage.text('');
-
-                // Perform client-side validation using the Validator.js library
-                if (!form[0].checkValidity()) {
-                    form[0].reportValidity();
-                    return;
-                }
-
-                // Disable the submit button to prevent multiple submissions
-                submitButton.prop('disabled', true);
-
-                // Prepare the form data to be submitted
-                let formData = form.serialize();
-
-                // Send the form data to Formspree
-                $.ajax({
-                    url: form.attr('action'),
-                    method: 'POST',
-                    data: formData,
-                    dataType: 'json',
-                    success: function (response) {
-                        // Clear the form fields
-                        form[0].reset();
-                        formMessage.text('Thank you! Your message has been sent.');
-
-                        // Enable the submit button
-                        submitButton.prop('disabled', false);
-                    },
-                    error: function (xhr, status, error) {
-                        console.error(xhr.responseText);
-                        formMessage.text('An error occurred while submitting the form. Please try again.');
-
-                        // Enable the submit button
-                        submitButton.prop('disabled', false);
-                    }
-                });
-            });
-        });
-    </script>
-
 </body>
 
 </html>

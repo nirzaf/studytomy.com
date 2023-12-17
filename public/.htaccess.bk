@@ -1,5 +1,3 @@
-
-
 # BEGIN Security Block
 # Block the include-only files.
 <IfModule mod_rewrite.c>
