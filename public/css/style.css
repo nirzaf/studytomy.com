@@ -1279,7 +1279,6 @@ p {
 .category {
     background-color: #003049;
     border-radius: 10px;
-    margin-top: -150px;
     position: relative;
     z-index: 5;
 }
@@ -1349,6 +1348,16 @@ p {
     background-color: #F77F00;
 }
 
+#category-part .container {
+    position: relative;
+}
+
+#category-part .fa-angle-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*=====================================================
     5. ABOUT css 
@@ -4481,12 +4490,6 @@ p.form-message.error {
 
 .contact-address ul li .singel-address .cont {
     padding-left: 20px;
-}
-
-.contact-address ul li .singel-address .cont p {
-}
-
-.map {
 }
 
 .map #contact-map {
