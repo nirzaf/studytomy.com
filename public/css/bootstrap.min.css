@@ -5138,7 +5138,7 @@ input[type=submit].btn-block {
 }
 
 .card-subtitle {
-    margin-top: -.375rem;
+    /* margin-top: -.375rem; */
     margin-bottom: 0
 }
 
