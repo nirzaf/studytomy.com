@@ -1052,10 +1052,6 @@ p {
 /*=====================================================
     3. SLIDER css 
 ======================================================*/
-/* 
-.single-slider {
-    padding-bottom: 300px;
-} */
 
 .slider-cont {
     position: relative;
@@ -1077,8 +1073,6 @@ p {
     padding-bottom: 50px;
 }
 
-.slider-cont ul {
-}
 
 .slider-cont ul li {
     display: inline-block;
@@ -1119,25 +1113,8 @@ p {
     right: 30px;
 }
 
-/*===== Index-2 =====*/
-
-.slider-2 .slider-cont h1 {
-    padding-bottom: 40px;
-}
-
-/* .slider-2.single-slider {
-    padding-top: 230px;
-    padding-bottom: 250px;
-} */
 
 /*===== Index-3 =====*/
-
-#slider-part-3 {
-    position: relative;
-    padding-top: 220px;
-    padding-bottom: 120px;
-}
-
 #slider-part-3::before {
     content: '';
     position: absolute;
@@ -1221,10 +1198,6 @@ p {
 
 .slider-search .main-btn:hover {
     border-color: #07294d;
-}
-
-
-.slider-feature {
 }
 
 .singel-slider-feature {
