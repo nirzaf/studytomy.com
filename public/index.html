@@ -30,25 +30,13 @@
         gtag('js', new Date());
         gtag('config', 'G-TW9CCBYEXG');
 
-        // Get slider image element
-        const sliderImg = document.getElementById('slider-img');
 
-        // Set different image sources based on window width
-        function setSliderImage() {
-            if (window.innerWidth < 768) {
-                sliderImg.src = 'https://res.cloudinary.com/durxawmiv/image/upload/q_49/v1707159474/mobile_banner_u4y0zc.png';
-            } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-                sliderImg.src = 'https://res.cloudinary.com/durxawmiv/image/upload/q_49/v1706464700/main-slider_ybbd0c.jpg';
-            } else {
-                sliderImg.src = 'https://res.cloudinary.com/durxawmiv/image/upload/q_49/v1707161221/static-studytomy-banner_wasugi.jpg';
-            }
-        }
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "igippdunx8");
 
-        // Initialize on page load
-        setSliderImage();
-
-        // Update on resize
-        window.addEventListener('resize', setSliderImage);
     </script>
 
     <!-- external reference links - begin -->
@@ -137,9 +125,15 @@
             margin-right: 5%;
         }
 
+        @media (min-width: 768px) {
+            .support-button {
+                float: right;
+            }
+        }
+
         @media (max-width: 600px) {
             #why-choose-us p {
-                font-size: 12px; 
+                font-size: 12px;
             }
         }
 
@@ -176,10 +170,11 @@
     </div>
 
     <header id="header-part">
-        <div class="header-logo-support pt-30 pb-30">
+        <div class="header-logo-support">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                <div class="row align-items-center">
+                    <!-- Logo Column -->
+                    <div class="col-lg-4 col-md-4 order-lg-1 order-md-1 order-1 text-center text-md-left mb-3 mb-md-0">
                         <div class="logo">
                             <a href="/index.html">
                                 <img alt="Logo"
@@ -188,23 +183,19 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8">
-                        <div class="support-button float-right">
-                            <div class="support float-left">
-                                <div class="cont">
-                                    <span>+61452413362</span>
-                                </div>
-                            </div>
-                            <div class="button float-left">
-                                <a class="main-btn Video-popup"
-                                    href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi">BOOK FREE
-                                    TRIAL</a>
-                            </div>
+
+                    <!-- Button Column -->
+                    <div class="col-lg-8 col-md-8 order-lg-2 order-md-2 order-2 text-center text-md-right">
+                        <div class="support-button">
+                            <a class="main-btn Video-popup"
+                                href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi">BOOK FREE TRIAL</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <div class="navigation">
             <div class="container">
@@ -256,36 +247,36 @@
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#category-part"><i
                                                         class="fas fa-microscope"></i> Biology</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-dna"></i> Human Biology</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-atom"></i> Physics</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-flask"></i> Chemistry</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-language"></i> Language</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-book"></i> English Literature</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-briefcase"></i> Business</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-brain"></i> Psychology</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-square-root-alt"></i> Mathematics</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-chart-line"></i> Business Studies</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-file-invoice-dollar"></i> Accounting</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-chart-pie"></i> Economics</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-calculator"></i> Additional Mathematics</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-laptop-code"></i> Computer Science</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-chart-bar"></i> Statistics</a></li>
-                                            <li><a class="dropdown-item" href="#category-part"><i
-                                                        class="fas fa-desktop"></i> ICT</a></li>
+                                                        <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-dna"></i> Human Biology</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-atom"></i> Physics</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-flask"></i> Chemistry</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-language"></i> Language</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-book"></i> English Literature</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-briefcase"></i> Business</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-brain"></i> Psychology</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-square-root-alt"></i> Mathematics</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-chart-line"></i> Business Studies</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-file-invoice-dollar"></i> Accounting</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-chart-pie"></i> Economics</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-calculator"></i> Additional Mathematics</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-laptop-code"></i> Computer Science</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-chart-bar"></i> Statistics</a></li>
+                                                <li><a class="dropdown-item" href="#category-part"><i
+                                                            class="fas fa-desktop"></i> ICT</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -313,15 +304,15 @@
                                             <li><a class="dropdown-item"
                                                     href="https://wa.me/61452413362?text=Hi,%20I'm%20interested%20to%20learn%20more%20about%20your%20tutorial."><i
                                                         class="fab fa-whatsapp"></i>WhatsApp</a></li>
-                                            <li><a class="dropdown-item" href="javascript:void(0);"
-                                                    onclick="openHubSpotChat()"><i class="fas fa-comments"></i>Chat</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="tel:+61452413362"><i
-                                                        class="fas fa-phone"></i>Mobile</a></li>
-                                            <li><a class="dropdown-item" href="mailto:info@studytomy.com"><i
-                                                        class="far fa-envelope"></i>Email</a></li>
-                                            <li><a class="dropdown-item" href="/contact.html"><i
-                                                        class="fas fa-globe"></i>Web Form</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);"
+                                                            onclick="openHubSpotChat()"><i class="fas fa-comments"></i>Chat</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="tel:+61452413362"><i
+                                                                class="fas fa-phone"></i>Mobile</a></li>
+                                                    <li><a class="dropdown-item" href="mailto:info@studytomy.com"><i
+                                                                class="far fa-envelope"></i>Email</a></li>
+                                                    <li><a class="dropdown-item" href="/contact.html"><i
+                                                                class="fas fa-globe"></i>Web Form</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -333,15 +324,16 @@
         </div>
     </header>
 
+
     <section id="slider-part">
         <div class="single-slider bg_cover">
             <div>
                 <div class="row">
-                    <div class="col-12" >
+                    <div class="col-12">
                         <picture>
                             <source media="(max-width: 767px)"
                                 srcset="https://res.cloudinary.com/durxawmiv/image/upload/q_49/v1707159474/mobile_banner_u4y0zc.png"
-                                class="img-fluid" alt="Image description" >
+                                class="img-fluid" alt="Image description">
                             <source media="(max-width: 1200px)"
                                 srcset="https://res.cloudinary.com/durxawmiv/image/upload/q_40/v1707161221/static-studytomy-banner_wasugi.jpg"
                                 class="img-fluid" alt="Image description">
