@@ -643,11 +643,6 @@ p {
     padding-bottom: 10px;
 }
 
-.header-contact {
-}
-
-.header-contact ul {
-}
 
 .header-contact ul li {
     display: inline-block;
@@ -658,17 +653,11 @@ p {
     margin-right: 0;
 }
 
-.header-contact ul li img {
-}
-
 .header-contact ul li span {
     color: #dee2e6;
     font-size: 15px;
     font-weight: 400;
     margin-left: 10px;
-}
-
-.header-opening-time {
 }
 
 .header-opening-time p {
@@ -685,10 +674,6 @@ p {
     padding-bottom: 0;
 }
 
-
-.support-button {
-}
-
 .support-button .support {
     display: -moz-flex;
     display: -ms-flex;
@@ -700,9 +685,6 @@ p {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-top: 7px;
-}
-
-.support-button .support .icon {
 }
 
 .support-button .support .cont {
@@ -728,9 +710,6 @@ p {
 }
 
 /*===== Header Menu =====*/
-
-.navigation {
-}
 
 .navigation.sticky {
     position: fixed;
@@ -1052,10 +1031,6 @@ p {
 /*=====================================================
     3. SLIDER css 
 ======================================================*/
-/* 
-.single-slider {
-    padding-bottom: 300px;
-} */
 
 .slider-cont {
     position: relative;
@@ -1077,8 +1052,6 @@ p {
     padding-bottom: 50px;
 }
 
-.slider-cont ul {
-}
 
 .slider-cont ul li {
     display: inline-block;
@@ -1119,25 +1092,8 @@ p {
     right: 30px;
 }
 
-/*===== Index-2 =====*/
-
-.slider-2 .slider-cont h1 {
-    padding-bottom: 40px;
-}
-
-/* .slider-2.single-slider {
-    padding-top: 230px;
-    padding-bottom: 250px;
-} */
 
 /*===== Index-3 =====*/
-
-#slider-part-3 {
-    position: relative;
-    padding-top: 220px;
-    padding-bottom: 120px;
-}
-
 #slider-part-3::before {
     content: '';
     position: absolute;
@@ -1221,10 +1177,6 @@ p {
 
 .slider-search .main-btn:hover {
     border-color: #07294d;
-}
-
-
-.slider-feature {
 }
 
 .singel-slider-feature {

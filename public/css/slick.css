@@ -56,7 +56,6 @@
 .slick-track:before,
 .slick-track:after {
     display: table;
-
     content: '';
 }
 
