@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta
         content="Epitome of E-Tutoring, Discover the power of online learning with our comprehensive platform. Expand your knowledge, gain new skills, and achieve your goals at your own pace"
@@ -125,6 +126,12 @@
             margin-right: 5%;
         }
 
+        @media (max-width: 1200px) {
+            .navbar-expand-lg .navbar-toggler {
+                display: block;
+            }
+        }
+
         @media (min-width: 768px) {
             .banner {
                 margin-left: 10px;
@@ -159,6 +166,27 @@
                 height: 80px;
             }
         }
+
+        @media (max-width: 768px) {
+            .desktop-button {
+                display: none;
+            }
+
+            .mobile-button {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .desktop-button {
+                display: block;
+            }
+
+            .mobile-button {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -176,146 +204,110 @@
         </div>
     </div>
 
-    <header class="header-area">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-2 col-md-2 col-sm-12 text-center text-lg-left order-lg-1 order-md-1 order-1">
-                    <a href="./index.html">
-                        <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1689866991/Website/images/full-logo_yhwi9q.png"
-                            alt="Logo" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-lg-8 col-md-8 d-none d-md-block order-lg-2 order-md-2 order-3">
-                    <div class="navigation">
-                        <nav class="navbar navbar-expand-lg">
-                            <nav class="navbar navbar-expand-lg">
-                                <button aria-controls="navbarSupportedContent" aria-expanded="false"
-                                    aria-label="Toggle navigation" class="navbar-toggler"
-                                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
-                                            <a href="./index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/about.html">About us</a>
-                                        </li>
-                                        <li class="nav-item dropdown" style="margin-top: 0 !important;">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Exam Boards
-                                            </a>
-                                            <ul class="dropdown-menu zero-margin" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="/exam-boards.html"><i
-                                                            class="fas fa-university"></i> Edexcel</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html"><i
-                                                            class="fas fa-university"></i> Cambridge (CIE)</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html#aqa"><i
-                                                            class="fas fa-university"></i> AQA</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html#ocr-a-ocr-b"><i
-                                                            class="fas fa-university"></i> OCR A & OCR B</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
-                                                            class="fas fa-university"></i> IB</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
-                                                            class="fas fa-university"></i> OSSD</a></li>
-                                                <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
-                                                            class="fas fa-university"></i> VCE</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Subjects
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-microscope"></i> Biology</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-dna"></i> Human Biology</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-atom"></i> Physics</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-flask"></i> Chemistry</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-language"></i> Language</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-book"></i> English Literature</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-briefcase"></i> Business</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-brain"></i> Psychology</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-square-root-alt"></i> Mathematics</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-chart-line"></i> Business Studies</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-file-invoice-dollar"></i> Accounting</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-chart-pie"></i> Economics</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-calculator"></i> Additional Mathematics</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-laptop-code"></i> Computer Science</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-chart-bar"></i> Statistics</a></li>
-                                                <li><a class="dropdown-item" href="#category-part"><i
-                                                            class="fas fa-desktop"></i> ICT</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="home-school.html">Home School</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Career
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li>
-                                                    <a class="dropdown-item"
-                                                        href="https://baserow.io/form/VJDMflCn-5Q3lGS_FjXfGFB-Jn95MNo_NL4wYhzmLZk">
-                                                        <i class="fas fa-users"></i>Join with us</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Contact
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item"
-                                                        href="https://wa.me/61452413362?text=Hi,%20I'm%20interested%20to%20learn%20more%20about%20your%20tutorial."><i
-                                                            class="fab fa-whatsapp"></i>WhatsApp</a></li>
-                                                <li><a class="dropdown-item" href="javascript:void(0);"
-                                                        onclick="openHubSpotChat()"><i
-                                                            class="fas fa-comments"></i>Chat</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="tel:+61452413362"><i
-                                                            class="fas fa-phone"></i>Mobile</a></li>
-                                                <li><a class="dropdown-item" href="mailto:info@studytomy.com"><i
-                                                            class="far fa-envelope"></i>Email</a></li>
-                                                <li><a class="dropdown-item" href="/contact.html"><i
-                                                            class="fas fa-globe"></i>Web Form</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </nav>
+    <header id="header-part">
+        <div class="header-logo-support pt-30 pb-30">
+            <div class="container-header">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1689866991/Website/images/full-logo_yhwi9q.png"
+                                    alt="Logo" class="img-fluid">
+                            </a>
+                            <div class="button mobile-button">
+                                <a href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi" class="main-btn Video-popup"
+                                    style="color: white; text-decoration: none; padding-right:10px; padding-left:10px">BOOK
+                                    A FREE TRIAL</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 text-center text-lg-right order-lg-3 order-md-3 order-2">
-                   <a href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi" class="main-btn Video-popup" 
-                   style="color: white; text-decoration: none; padding-right:10px; padding-left:10px">BOOK A FREE TRIAL</a>
-                </div>
-            </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="support-button float-right d-none d-md-block">
+                            <div class="button float-left">
+                                <a href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi" class="main-btn Video-popup"
+                                    style="color: white; text-decoration: none; padding-right:10px; padding-left:10px">BOOK
+                                    A FREE TRIAL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header logo support -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-8">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="active" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/about.html">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/exam-boards.html">Exam Boards</a>
+                                        <ul class="sub-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="/exam-boards.html"><i
+                                                        class="fas fa-university"></i> Edexcel</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html"><i
+                                                        class="fas fa-university"></i> Cambridge</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html#aqa"><i
+                                                        class="fas fa-university"></i> AQA</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html#ocr-a-ocr-b"><i
+                                                        class="fas fa-university"></i> OCR A & OCR B</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
+                                                        class="fas fa-university"></i> IB</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
+                                                        class="fas fa-university"></i> OSSD</a></li>
+                                            <li><a class="dropdown-item" href="/exam-boards.html#ib"><i
+                                                        class="fas fa-university"></i> VCE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="home-school.html">Home School</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://baserow.io/form/VJDMflCn-5Q3lGS_FjXfGFB-Jn95MNo_NL4wYhzmLZk">Career</a>
+                                        <ul class="sub-menu">
+                                            <li><a
+                                                    href="https://baserow.io/form/VJDMflCn-5Q3lGS_FjXfGFB-Jn95MNo_NL4wYhzmLZk"><i
+                                                        class="fas fa-users"></i> Join with us</a></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html">Contact us</a>
+                                        <ul class="sub-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="https://wa.me/61452413362?text=Hi,%20I'm%20interested%20to%20learn%20more%20about%20your%20tutorial."><i
+                                                        class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);"
+                                                    onclick="openHubSpotChat()"><i class="fas fa-comments"></i> Chat</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="tel:+61452413362"><i
+                                                        class="fas fa-phone"></i> Mobile</a></li>
+                                            <li><a class="dropdown-item" href="mailto:info@studytomy.com"><i
+                                                        class="far fa-envelope"></i> Email</a></li>
+                                            <li><a class="dropdown-item" href="/contact.html"><i
+                                                        class="fas fa-globe"></i> Web Form</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> <!-- nav -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
         </div>
     </header>
 
@@ -572,6 +564,26 @@
         </div>
     </section>
 
+    <section class="pb-20" id="apply-aprt" style="margin-top:50px;">
+        <div class="container">
+            <div class="apply">
+                <div class="row no-gutters">
+                    <div class="col-lg-12">
+                        <div class="apply-cont apply-color-1"
+                            style="background-color: #003049; color: white; box-shadow: 1px 1px 5px black;">
+                            <h4 style="margin-bottom: 10px; text-align: center; color: white">Pay-as-you-Go Clear Your Doubts</h4>
+                            <div class="text-center">
+                                <p>Got doubts and not a student of ours? No worries! Contact us for an exclusive doubt clearing session</p>
+                                <a class="main-btn Video-popup"
+                                    href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi" style="text-decoration: none;">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div id="exam-board-logo">
         <div class="container mt-60 mb-60">
             <h2 class="section-header" style="text-align: center;">Exam Boards</h2>
@@ -773,7 +785,7 @@
                                 enjoy our special discounted rates!</h4>
                             <div class="text-center">
                                 <a class="main-btn Video-popup"
-                                    href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi">Contact</a>
+                                    href="https://share-eu1.hsforms.com/1PXvNTAMBThiYGJmZT6Lasw2b7doi" style="text-decoration: none;">Contact</a>
                             </div>
                         </div>
                     </div>

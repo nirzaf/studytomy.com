@@ -48,3 +48,90 @@ pale beige color, also known as bone.
 4) Past papers and revision papers are provided for the student
 5) Graduate tutors with excellent experience
 6) Unique accounts for each student to ensure privacy
+
+
+
+        @media (max-width: 1199.98px) {
+            .header-area .navigation {
+                display: none;
+                /* Hide the navigation by default */
+            }
+
+            .header-area .navbar-toggler {
+                display: block;
+                /* Show the toggler (hamburger menu) */
+            }
+
+            .header-area .navbar-collapse {
+                display: none;
+                /* Ensure that the collapsed menu is hidden */
+            }
+
+            .header-area .navbar-collapse.show {
+                display: block;
+                /* Show the collapsed menu when toggled */
+            }
+
+            /* Additional styles for mobile view */
+            .header-area .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .header-area .navbar-nav {
+                display: block;
+                width: 100%;
+            }
+
+            .header-area .navbar-nav .nav-item {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header-area .navbar-nav .nav-link {
+                padding: 0.5rem 1rem;
+                /* Adjust padding for better touch targets */
+            }
+
+            .header-area .navbar-nav .dropdown-menu {
+                position: static;
+                /* Dropdowns should expand within the navigation area */
+                float: none;
+            }
+        }
+
+        /* Ensure that the toggler button is visible and functional */
+        .header-area .navbar-toggler {
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .header-area .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: #333;
+            /* Adjust color as needed */
+            border-radius: 1px;
+            margin: 4px 0;
+            transition: 0.2s;
+        }
+
+        /* Rotate icon bars into an 'X' when navbar is expanded */
+        .header-area .navbar-toggler.collapsed .top-bar {
+            transform: rotate(45deg);
+            position: relative;
+            top: 7px;
+        }
+
+        .header-area .navbar-toggler.collapsed .middle-bar {
+            opacity: 0;
+        }
+
+        .header-area .navbar-toggler.collapsed .bottom-bar {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -7px;
+        } 
