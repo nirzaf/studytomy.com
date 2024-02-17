@@ -1,6 +1,6 @@
 # Become a Tutor 
 
-## Tutor vacany only for Srilankans
+## Tutor vacancy only for Srilankans
 
 - Full Name
 - Email
@@ -57,9 +57,9 @@ Have you got your own laptop, Microphone, Digital Writing Pad and a stable inter
     - 3pm - 6pm
     - 6pm - 9pm
 
-Part-time or Fulltime - This should be dropdown with the following options - can choose only one option
-    - Parttime
-    - Fulltime
+Part-time or Full-time - This should be dropdown with the following options - can choose only one option
+    - Part-time
+    - Full-time
 
 if Part time - are you able to commit 3 hours per day - This should be dropdown with the following options - can choose only one option
 
