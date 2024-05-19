@@ -220,6 +220,13 @@
                 display: none;
             }
         }
+
+        @media screen and (max-width: 600px) {
+            .unique-row {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
     </style>
 </head>
 
@@ -350,7 +357,7 @@
     <section id="page-banner" class="pt-100 bg_cover" data-overlay="9"
         style="background-image: url(https://res.cloudinary.com/durxawmiv/image/upload/v1708093195/Sept-9-Benefits-of-Group-Work_web-768x512_qsxtjv.jpg)">
         <div class="container">
-            <div class="row">
+            <div class="row unique-row">
                 <div class="col-lg-6" style="margin-top:10px;">
                     <div class="page-banner-cont">
                         <nav aria-label="breadcrumb">
@@ -375,9 +382,10 @@
                     <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1709675845/about_qobvag.jpg"
                         alt="About Studyomy">
                 </div>
+            </div>
 
+            <div class="row" >
                 <div class="col-lg-6" style="z-index: 1">
-                    <br>
                     <br>
                     <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1709676485/our_mission_p0hvfn.jpg"
                         alt="Our Mission logo">
@@ -388,8 +396,6 @@
                             <ol class="breadcrumb">
                                 <div class="dashboard-cont">
                                     <div>
-                                        <br>
-                                        <br>
                                         <br>
                                         <h5 style="color: white;">Our Mission</h5><br>
                                         <p style="color: white;">
@@ -406,15 +412,15 @@
                         </nav>
                     </div>
                 </div>
+            </div> <!-- row -->
 
+            <div class="row unique-row">
                 <div class="col-lg-6" style="margin-top:10px;">
                     <div class="page-banner-cont">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <div class="dashboard-cont">
                                     <div>
-                                        <br>
-                                        <br>
                                         <br>
                                         <h5 style="color: white;" id="edexcel">Comprehensive Approach</h5><br>
                                         <p style="color: white;">
@@ -429,7 +435,6 @@
                     </div>
                 </div>
                 <div class="col-lg-6" style="z-index: 1">
-                    <br>
                     <br>
                     <img src="https://res.cloudinary.com/durxawmiv/image/upload/v1709676735/Comprehensive_Approach_cfqzud.jpg"
                         alt="Edexcel Logo">
