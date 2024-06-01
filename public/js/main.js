@@ -194,14 +194,6 @@ $(function () {
     });
 
 
-    //====== Magnific Popup
-
-    $('.Video-popup').magnificPopup({
-        type: 'iframe'
-        // other options
-    });
-
-
     //===== Slick testimonial Slied
 
     $('.testimonial-slied').slick({
