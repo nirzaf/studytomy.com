@@ -74,7 +74,71 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTGRCTV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQC6PQ0E9Q"></script>
+    <script type="text/javascript" src="https://app.termly.io/resource-blocker/32e0b0c9-23b8-4ddf-afbe-dec1020c4704?autoBlock=on"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EQC6PQ0E9Q');
+
+        // Check if the user has already accepted cookies
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        window.onload = function () {
+            if (!getCookie('cookieConsent')) {
+                document.getElementById('cookie-consent-popup').style.display = 'block';
+            }
+
+            document.getElementById('accept-cookies').addEventListener('click', function () {
+                document.cookie = 'cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+                loadGoogleAnalytics();
+                document.getElementById('cookie-consent-popup').style.display = 'none';
+            });
+
+            document.getElementById('reject-cookies').addEventListener('click', function () {
+                document.cookie = 'cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+                document.getElementById('cookie-consent-popup').style.display = 'none';
+            });
+        };
+
+        function loadGoogleAnalytics() {
+            const script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EQC6PQ0E9Q';
+            script.async = true;
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-EQC6PQ0E9Q');
+            };
+        }
+    </script>
+
+    <script>
+        function openHubSpotChat() {
+            if (window.HubSpotConversations) {
+                window.HubSpotConversations.widget.open();
+            }
+        }
+    </script>
+
     <!-- external reference links - begin -->
+    <link rel="stylesheet" href="cookie-consent.css">
+    <script src="cookie-consent.js"></script>
     <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
     <link rel="icon" type="image/x-icon" sizes="96x96" href="favicon.ico">
     <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
@@ -220,15 +284,49 @@
                 display: none
             }
         }
+
+        /* cookie-consent.css */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(252, 247, 247);
+            color: #000000;
+            padding: 20px;
+            display: none;
+            /* Hide by default */
+            z-index: 1000;
+        }
+
+        .cookie-consent-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cookie-consent button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTGRCTV" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- Cookie Consent Popup -->
+    <!-- <div id="cookie-consent-popup" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <p>This website uses cookies to improve your experience. By continuing to browse the site, you are agreeing
+                to our use of cookies. <a href="privacy-policy.html">Learn More</a></p>
+            <button id="accept-cookies">Accept</button>
+            <button id="reject-cookies">Reject</button>
+        </div>
+    </div> -->
 
     <label style="display:none">
         Home About us Exam Boards Edexcel Cambridge AQA OCR A & OCR B IB OSSD VCE Home School Career Join with us
@@ -270,8 +368,7 @@
                                     alt="Studytomy Official Full Logo" class="img-fluid">
                             </a>
                             <div class="button mobile-button">
-                                <a href="submission-form.html"
-                                    class="main-btn"
+                                <a href="submission-form.html" class="main-btn"
                                     style="color: white; text-decoration: none; padding-right:10px; padding-left:10px">BOOK
                                     A FREE TRIAL</a>
                             </div>
@@ -280,8 +377,7 @@
                     <div class="col-lg-8 col-md-8">
                         <div class="support-button float-right d-none d-md-block">
                             <div class="button float-left">
-                                <a href="submission-form.html"
-                                    class="main-btn"
+                                <a href="submission-form.html" class="main-btn"
                                     style="color: white; text-decoration: none; padding-right:10px; padding-left:10px">BOOK
                                     A FREE TRIAL</a>
                             </div>
@@ -335,11 +431,10 @@
                                         <a href="home-school.html">Home School</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="join-studytomy.html"
-                                            target="_blank">Career</a>
+                                        <a href="join-studytomy.html" target="_blank">Career</a>
                                         <ul class="sub-menu">
-                                            <li><a href="join-studytomy.html"
-                                                    target="_blank"><i class="fas fa-users"></i> Join with us</a></li>
+                                            <li><a href="join-studytomy.html" target="_blank"><i
+                                                        class="fas fa-users"></i> Join with us</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -399,7 +494,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867002/Website/images/all-icon/dna_j3etea.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Biology.gif?updatedAt=1717445252254"
                                             alt="Depicting a double helix structure commonly associated with DNA, the animation breaks down its elements: The double helix structure represents the double-stranded DNA molecule, with each strand consisting of nucleotide sequences held together by hydrogen bonds between complementary nucleotide pairs. Base pairs form with Adenine pairing with Thymine and Cytosine with Guanine, creating the genetic code for building and maintaining organisms. DNA contains genetic information essential for growth, development, and functioning, serving as a blueprint for proteins. Understanding DNA is crucial in genetics, biotechnology, and medicine, aiding in identifying genetic disorders, tracing ancestry, and solving criminal cases. DNA's fundamental role is vital in shaping life.">
                                     </span>
                                     <span class="cont">
@@ -411,7 +506,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/v1704141351/cell-division_strbcq.gif"
+                                            src="https://ik.imagekit.io/studytomy/Human_Biology.gif?updatedAt=1717449618677"
                                             alt="The animation depicts a double helix structure commonly associated with DNA, deoxyribonucleic acid. The double helix structure represents the double-stranded DNA molecule with each strand consisting of a sequence of nucleotides held together by hydrogen bonds between complementary nucleotide pairs. Specific nucleotides form base pairs: Adenine pairs with Thymine and Cytosine pairs with Guanine. These base pairs create the genetic code that carries instructions for building and maintaining living organisms. DNA contains the genetic information necessary for an organism's growth, development, and functioning, serving as a blueprint for creating proteins essential for various cellular processes. Understanding DNA is crucial in fields such as genetics, biotechnology, and medicine, where DNA analysis helps identify genetic disorders, trace ancestry, and solve criminal cases. DNA is the fundamental molecule of life, and its intricate structure plays a vital role in shaping who we are.">
                                     </span>
                                     <span class="cont">
@@ -423,7 +518,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867007/Website/images/all-icon/newtons-cradle_p1giqu.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Physics.gif?updatedAt=1717445522157"
                                             alt="Illustrates the process of cell division, which is a fundamental aspect of all living organisms. Cell division is the method by which a single cell divides into two or more daughter cells. There are two main types of cell division: mitosis and meiosis. In mitosis, a cell divides to produce two genetically identical daughter cells. It’s a process that’s crucial for growth, development, and tissue repair in multicellular organisms. Mitosis consists of several stages: Prophase: Chromosomes condense and become visible, the nuclear envelope breaks down, and the spindle apparatus begins to form. Metaphase: Chromosomes align at the cell’s equator. Anaphase: Sister chromatids separate and move to opposite poles of the cell. Telophase: Nuclear membranes start to re-form around the two sets of chromosomes, which begin to decondense. Cytokinesis: The cytoplasm divides, resulting in two daughter cells. Meiosis, on the other hand, is a specialized form of cell division that reduces the chromosome number by half, creating four haploid cells, each genetically distinct from the parent cell. This is essential for sexual reproduction in eukaryotes.">
                                     </span>
                                     <span class="cont">
@@ -435,7 +530,7 @@
                                 <span class="singel-category text-center color-3">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867001/Website/images/all-icon/methane_ecrohx.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Chemistry.gif?updatedAt=1717445685976"
                                             alt="The GIF you're referring to likely depicts the molecular structure and vibrations of a methane molecule (CH4). Methane is the simplest alkane, consisting of one carbon atom bonded to four hydrogen atoms. The carbon atom is at the center of a tetrahedral geometry, with the hydrogen atoms at the corners. Here's a brief explanation of what the GIF might be showing: Tetrahedral Structure: The carbon atom forms four single covalent bonds with four hydrogen atoms, creating a tetrahedral shape to minimize electron pair repulsion. Vibrational Motion: The GIF might illustrate the natural vibrational modes of the methane molecule. Molecules vibrate in various ways – stretching, bending, and twisting – due to the thermal energy they possess. In the context of methane, these vibrations are significant because they contribute to the molecule's infrared absorption characteristics, making methane an effective greenhouse gas. The vibrations can absorb infrared radiation, which contributes to the warming of the Earth's atmosphere.">
                                     </span>
                                     <span class="cont">
@@ -447,7 +542,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867004/Website/images/all-icon/english-language_bksvi9.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Language.gif?updatedAt=1717445835969"
                                             alt="Simplified representation of the concept of English language learning. While I don’t have access to the specific GIF itself, I can provide an explanation based on common themes related to language learning. Here are some possible interpretations of the GIF: Alphabet and Letters: The GIF might depict the English alphabet, showing the letters from A to Z. Learning the alphabet is often one of the first steps in language acquisition. Word Formation: It could illustrate how individual letters combine to form words. English learners often start by recognizing and pronouncing individual words. Language Acquisition Process: The GIF might symbolize the journey of language learning, where learners gradually build their vocabulary, improve pronunciation, and gain fluency. Language Practice: Perhaps it shows someone practicing pronunciation, reading, or writing. Consistent practice is essential for language development. Language Tools: The GIF could represent tools used for language learning, such as textbooks, flashcards, or language apps. Remember that language learning involves various aspects, including grammar, vocabulary, pronunciation, and cultural context. Initial Scene: The animation begins with an image of a classic dictionary or book titled English in large letters. This book represents the English language and its comprehensive vocabulary. Book Opening: The book then opens up, symbolizing the exploration and learning process of the English language. This opening of the book indicates accessing knowledge or diving into the contents of the language. Words and Letters: Following the opening, various English words and letters float out of the book. This signifies the multitude of words, vocabulary, and grammar rules that the English language encompasses. Color and Movement: The animation uses vibrant colors and dynamic movements to keep the viewer's attention. The flowing words and letters might also represent the fluidity and evolving nature of the English language. Ending Scene: The GIF loops back to the closed book, ready to repeat the process. This could suggest that learning and mastering the English language is an ongoing, cyclical process.">
                                     </span>
                                     <span class="cont">
@@ -459,7 +554,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867004/Website/images/all-icon/books_zswoms.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Literature.gif?updatedAt=1717446027265"
                                             alt="Depicting a stack of books is a common symbol associated with learning, knowledge, and education. Books are fundamental tools for acquiring knowledge, containing information, stories, and insights that contribute to personal growth and understanding. They might symbolize the journey of learning, emphasizing the importance of reading and continuous education. Stacks of books often evoke curiosity and the desire to explore new ideas, with each book representing a different topic, perspective, or field of study. They could encourage viewers to delve into various subjects, broaden their horizons, and engage in intellectual exploration. Books are gateways to other worlds, transporting readers to fictional realms, historical periods, or scientific discoveries. They might evoke a sense of wonder, inviting viewers to immerse themselves in stories and use their imagination. In educational contexts, a stack of books can symbolize academic achievement, research, and scholarly pursuits, representing the effort put into studying, researching, and mastering a particular subject. The GIF might also evoke the ambiance of a library or bookstore, where rows of books await exploration. Libraries are places of quiet contemplation, where people seek knowledge and find solace among the shelves. Symbolism can vary based on cultural context and personal experiences, whether interpreted as a call to read more, explore new ideas, or appreciate the beauty of literature, it ultimately celebrates the richness of human knowledge.">
                                     </span>
                                     <span class="cont">
@@ -471,7 +566,7 @@
                                 <span class="singel-category text-center color-3">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867004/Website/images/all-icon/Business_md0fz8.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Business.gif?updatedAt=1717446092410"
                                             alt="A stylized representation of business and technology might emphasize the integration of visual experiences and media assets within a tech stack. The importance of visual content in modern business environments is significant, as visual experiences like images, videos, and graphics play a crucial role in marketing, branding, and user engagement. Businesses rely on media assets to convey messages, showcase products, and create memorable interactions with customers. Responsive design ensures that visual content adapts to different devices and screen sizes, requiring flexible images that adjust resolution, format, and quality dynamically. The GIF likely encapsulates the intersection of business, technology, and visual content management, highlighting the ease of managing media content and the importance of responsive design in providing optimal user experiences across various platforms.">
                                     </span>
                                     <span class="cont">
@@ -483,7 +578,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867008/Website/images/all-icon/psychology_eomj40.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Psychology.gif?updatedAt=1717446158250"
                                             alt="Represents the field of psychology, which is the scientific study of the mind and behavior. The GIF might depict various aspects of human behavior and emotions, illustrating how psychology seeks to understand and explain how we think, feel, and act. It could represent cognitive processes such as perception, memory, and decision-making, which are central topics in cognitive psychology. The GIF might symbolize mental health and the importance of psychological well-being, reflecting the role of psychology in diagnosing and treating mental disorders. It could highlight social psychology, focusing on how individuals interact with others and how social influences affect behavior. The GIF might illustrate the developmental stages that individuals go through from infancy to adulthood, a key area of study in developmental psychology. Psychology is a vast field that encompasses various sub-disciplines, each focusing on different aspects of human experience. GIFs related to psychology often aim to capture complex concepts in a simple and engaging way, making them accessible to a broader audience. They can be used in educational settings, social media, and professional presentations to convey psychological principles effectively. ">
                                     </span>
                                     <span class="cont">
@@ -495,7 +590,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867002/Website/images/all-icon/mathematics_xiorzq.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Mathematics.gif?updatedAt=1717446227422"
                                             alt="The GIF might show a graph of a function, such as a parabola, sine wave, or step function, helping understand function behaviors over values. It could depict geometric shapes like triangles, circles, or polygons, possibly undergoing transformations like rotations, translations, or reflections. The GIF might illustrate algebraic processes like solving equations, factoring polynomials, or applying the quadratic formula. If related to calculus, it might show concepts like limits, the area under a curve, or the slope of a tangent line, central to differentiation and integration. The GIF could represent statistical concepts like probability distributions, histograms, or scatter plots, used to analyze data. Mathematical GIFs visualize abstract concepts, aiding visual learners. A right-angled triangle, or right triangle, has one 90-degree angle, with the hypotenuse being the longest side opposite the right angle. The Pythagoras theorem states the hypotenuse squared equals the sum of the squares of the other two sides, $$ \text{Hypotenuse}^2 = \text{Base}^2 + \text{Altitude}^2 $$. Pythagorean triplets are integer sets satisfying this theorem, like (3, 4, 5), (6, 8, 10), and (5, 12, 13). The perimeter of a right triangle is the sum of all three sides. Right-angled triangles are fundamental in geometry, trigonometry, and real-world applications. Feel free to ask for more information or clarification!">
                                     </span>
                                     <span class="cont">
@@ -507,7 +602,7 @@
                                 <span class="singel-category text-center color-3">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867007/Website/images/all-icon/seminar_bkvhxf.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Business_Studies.gif?updatedAt=1717446288822"
                                             alt="Depicting a seminar setting, a seminar is an educational event where experts, speakers, or presenters share knowledge, insights, and research findings with an audience. Seminars can cover various topics, including academic subjects, professional development, industry trends, and specialized fields. The key elements in a seminar include the speaker or presenter who provides information, engages the audience, and delivers a presentation; the audience that participates by listening, asking questions, and interacting with the speaker; and visual aids like slides, charts, or visual materials to enhance understanding. Seminars encourage dialogue, allowing participants to ask questions and discuss ideas. The purpose of seminars includes knowledge transfer, skill enhancement, networking, and professional development. In the digital age, online seminars or webinars have become popular, allowing participants to join remotely, interact through chat or Q&A features, and learn from experts worldwide. Seminars serve as valuable platforms for learning, networking, and staying informed, whether in person or online, attending seminars can broaden knowledge and foster professional growth.">
                                     </span>
                                     <span class="cont">
@@ -519,7 +614,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867006/Website/images/all-icon/budgeting_gjjaso.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Accounting.gif?updatedAt=1717446366752"
                                             alt="A budget is a financial plan that helps manage money effectively, outlining income allocation to various expenses and financial goals, providing a clear financial picture for informed decisions. Budget components include income from salary, allowances, gifts, essential expenses like rent, utilities, groceries, transportation, discretionary expenses like entertainment, dining out, hobbies, and allocations for savings, emergency funds, and specific goals like vacations, college funds, or car purchases. Budgeting creates financial awareness, prioritizes essential expenses, aids in goal achievement, and prevents debt. It's essential for everyone, offering benefits like living within means, making better financial decisions, and planning for large expenses. Creating and following a budget empowers financial control and contributes to financial well-being. If you have more questions or need further details, feel free to ask!">
                                     </span>
                                     <span class="cont">
@@ -531,7 +626,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867004/Website/images/all-icon/devaluation_eifolw.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Economics.gif?updatedAt=1717446529182"
                                             alt="Devaluation is the deliberate downward adjustment of a country's currency value relative to other currencies or a standard, used by countries with fixed or semi-fixed exchange rates. The purpose of devaluation is to make a country's money cheaper in the global market, boosting exports by making them more competitive internationally, while making foreign products more expensive for domestic consumers, reducing imports. The effects of devaluation include an export boost, as foreign purchasers find these goods cheaper, and an import impact, as imports become costlier for citizens of the devaluing country. Devaluation can help improve a country's trade balance if needed. However, it may reduce the efficiency of domestic industries without competitive pressure, increase the risk of inflation due to higher exports relative to imports, and make servicing foreign debt more expensive. Devaluation is a deliberate government action, usually in fixed exchange rate systems, while depreciation is a decline in a currency's market value due to market forces in free-floating exchange rate systems. Currency wars and historical context show that countries like China and the United States have clashed over currency valuation. Devaluation encourages investment and draws foreign investors to cheaper assets. It is a complex economic tool with both benefits and risks, and governments carefully weigh these factors when deciding whether to adjust their currency's value.">
                                     </span>
                                     <span class="cont">
@@ -543,7 +638,7 @@
                                 <span class="singel-category text-center color-3">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867004/Website/images/all-icon/squareroot_owt5vw.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Additional_Maths.gif?updatedAt=1717446609660"
                                             alt="Certainly! The square root of a number is the value that, when multiplied by itself, equals the original number. It's the inverse operation of squaring a number. Given a positive number \(a\), the square root of \(a\) is denoted as \(\sqrt{a}\), and if \(x\) is the square root of \(a\), then \(x^2 = a\). The square root symbol is \(\sqrt{\phantom{a}}\), for example, \(\sqrt{9} = 3\) because \(3 \times 3 = 9\). If a number is a perfect square, it has an exact square root. The square root of a negative number is not defined in the real number system but exists in the complex number system. For non-perfect square numbers, we use estimation or calculators to find their square roots, and iterative methods can approximate square roots. Examples include \(\sqrt{4} = 2\) and \(\sqrt{25} = 5\). Square roots are essential in mathematics, science, and engineering, helping us understand relationships between areas, lengths, and quantities.">
                                     </span>
                                     <span class="cont">
@@ -555,7 +650,7 @@
                                 <span class="singel-category text-center color-1">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1689867001/Website/images/all-icon/monitor_fzxivr.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Computer_Science.gif?updatedAt=1717446689115"
                                             alt="The GIF likely illustrates a computer monitor, an essential output device in a computer setup. A monitor is the visual interface that displays information processed by the computer's graphics card, allowing users to interact with computer applications and programs. Monitors come in types like CRT, which uses electron guns, LCD with liquid crystals, LED with LED backlighting, OLED with individual organic pixels, and QLED using quantum dots. Features include resolution, refresh rate, aspect ratio, and connectivity options like HDMI and DisplayPort. Usage scenarios vary from professional work requiring high resolution and color accuracy to gaming with high refresh rates and general use for everyday tasks. The choice of a monitor affects the computing experience for work, gaming, or multimedia consumption.">
                                     </span>
                                     <span class="cont">
@@ -567,7 +662,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_50,w_200/v1696701723/analytical-skill_ezvjdy.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Statistics.gif?updatedAt=1717446784304"
                                             alt="Analytical skills are essential soft skills that involve the ability to observe, research, interpret, and solve complex problems. They might be depicted in a GIF as problem-solving steps, data analysis with graphs or charts, critical thinking evaluations, research processes, or decision-making scenarios. These skills are valuable across various industries and roles, enabling effective handling of challenges and strategic decision-making. Developing analytical skills can involve engaging in problem-solving activities, practicing data interpretation, and learning to approach issues from multiple perspectives, contributing to career growth and competitiveness in the job market.">
                                     </span>
 
@@ -580,7 +675,7 @@
                                 <span class="singel-category text-center color-2">
                                     <span class="icon">
                                         <img alt="Icon"
-                                            src="https://res.cloudinary.com/durxawmiv/image/upload/c_scale,h_200,q_50/v1696701947/interface_hcp4uu.gif"
+                                            src="https://ik.imagekit.io/studytomy/Studytomy_Information_and_Communications_Technology.gif?updatedAt=1717446901778"
                                             alt="The GIF likely illustrates the concept of an interface in a technological or computing context. It might depict elements of a user interface such as buttons, menus, and screens that allow users to interact with a device or software. It could illustrate a graphical user interface, showcasing how users can interact with digital products through graphical icons and visual indicators. The GIF might represent a programming interface or an API, highlighting the ways software applications communicate with each other. It could show the physical points of interaction between hardware components, like ports on a computer or connections between devices. The GIF might symbolize the process of designing interactive digital products, environments, systems, and services. Interfaces are a fundamental aspect of technology as they define how users can effectively control and operate software and hardware. Good interface design is crucial for usability and user experience, ensuring that interactions are intuitive, efficient, and enjoyable.">
                                     </span>
 
@@ -652,7 +747,8 @@
                             <div class="text-center">
                                 <p>Got doubts and not a student of ours? No worries! Contact us for an exclusive doubt
                                     clearing session</p>
-                                <a class="main-btn" href="submission-form.html" style="text-decoration: none;">Contact</a>
+                                <a class="main-btn" href="submission-form.html"
+                                    style="text-decoration: none;">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -712,7 +808,7 @@
     </div>
 
     <section class="bg_cover pt-65 pb-65" data-overlay="8" id="testimonial"
-        style="background-image: url(https://res.cloudinary.com/durxawmiv/image/upload/c_scale,q_30,w_800/v1689866992/Website/images/bg-2_qgikee.jpg)">
+        style="background-image: url(https://ik.imagekit.io/studytomy/Studytomy_Testimonial_Background.jpg?updatedAt=1717449732211)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -902,6 +998,7 @@
                         <div class="copyright text-center">
                             <p>Powered by <a href="https://quadrate.lk" target="_blank">Quadrate TechSolutions</a></p>
                             <p><a href="terms-and-conditions.html">Terms of Service of</a> Studytomy</p>
+                            <a href="consent-form.html" class="termly-display-preferences">Consent Preferences</a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Your Consent Preferences</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .success-message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            display: none; /* Initially hide the message */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Manage Your Consent Preferences</h2>
+        <form id="consent-form">
+            <label>
+                <input type="checkbox" name="marketing" id="marketing">
+                I consent to receive marketing emails.
+            </label>
+            <label>
+                <input type="checkbox" name="analytics" id="analytics">
+                I consent to the use of cookies for analytics.
+            </label>
+            <button type="submit">Update Consent</button>
+        </form>
+        <div class="success-message" id="success-message">
+            Your consent preferences have been saved.
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('consent-form');
+        const successMessage = document.getElementById('success-message');
+
+        // Load existing preferences from local storage (if any)
+        loadPreferences();
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // Get consent values
+            const marketingConsent = document.getElementById('marketing').checked;
+            const analyticsConsent = document.getElementById('analytics').checked;
+
+            // Store consent values in local storage or use your preferred method
+            localStorage.setItem('marketingConsent', marketingConsent);
+            localStorage.setItem('analyticsConsent', analyticsConsent);
+
+            // Show success message
+            successMessage.style.display = 'block';
+        });
+
+        function loadPreferences() {
+            // Retrieve consent values from local storage
+            const marketingConsent = localStorage.getItem('marketingConsent');
+            const analyticsConsent = localStorage.getItem('analyticsConsent');
+
+            // Set checkbox states based on retrieved values
+            if (marketingConsent === 'true') {
+                document.getElementById('marketing').checked = true;
+            }
+            if (analyticsConsent === 'true') {
+                document.getElementById('analytics').checked = true;
+            }
+        }
+    </script>
+</body>
+</html>
