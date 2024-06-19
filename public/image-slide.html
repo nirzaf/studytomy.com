@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studytomy Free Trial Promotion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            background-color: #EAE2B7;
+            color: #003049;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .promo {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .promo h1 {
+            color: #003049;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #413f3f;
+
+        }
+        .promo img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .subject {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #F77F00;
+        }
+
+        /* Style for the rating */
+        .rating {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #F77F00;
+            margin-bottom: 10px; /* Add some space below */
+        }
+        .rating i {
+            margin: 0 2px; /* Adjust spacing between stars */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="promo">
+            <img src="https://ik.imagekit.io/studytomy/tr:w-149/Logo.jpg?updatedAt=1717610209858" alt="Studytomy Logo">
+            <h1>Excel in your Exams</h1>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <p>One-to-One intreactive online classes with experienced tutors</p>
+
+            <h3>Subjects We Offer</h3>
+
+            <!-- Add the rating here -->
+            <div id="subjects">
+                <p class="subject">Biology</p>
+                <p class="subject">Human Biology</p>
+                <p class="subject">Physics</p>
+                <p class="subject">Chemistry</p>
+                <p class="subject">Language</p>
+                <p class="subject">English Literature</p>
+                <p class="subject">Business</p>
+                <p class="subject">Psychology</p>
+                <p class="subject">Mathematics</p>
+                <p class="subject">Business Studies</p>
+                <p class="subject">Accounting</p>
+                <p class="subject">Economics</p>
+                <p class="subject">Additional Mathematics</p>
+                <p class="subject">Computer Science</p>
+                <p class="subject">Statistics</p>
+                <p class="subject">ICT</p>
+            </div>
+            <p><a href="https://www.studytomy.com" style="font-weight: bolder;">BOOK YOUR FREE SLOT NOW</a></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var subjects = $("#subjects .subject");
+            var index = 0;
+            function showNextSubject() {
+                subjects.hide().eq(index).fadeIn(500);
+                index = (index + 1) % subjects.length;
+            }
+            setInterval(showNextSubject, 1000);
+            showNextSubject(); // show the first subject
+        });
+    </script>
+</body>
+</html>
